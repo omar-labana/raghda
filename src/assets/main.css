@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#191724] text-[#e0def4];
+}
+
+#overlay {
+  @apply fixed bg-[#f2e9e1] h-screen w-screen z-10;
+}
+
+#text {
+  @apply absolute;
+}
+
+@layer utilities {
+  .love-outline {
+    @apply text-[#f2e9e1];
+    text-shadow: -1px -1px 0 #eb6f92, 1px -1px 0 #eb6f92, -1px 1px 0 #eb6f92,
+      1px 1px 0 #eb6f92;
+  }
+
+  .text-outline {
+    @apply text-[#f2e9e1];
+    text-shadow: -1px -1px 0 #575279, 1px -1px 0 #575279, -1px 1px 0 #575279,
+      1px 1px 0 #575279;
+  }
+}
